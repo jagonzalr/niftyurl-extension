@@ -1,3 +1,13 @@
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+	chrome.tabs.insertCSS(tabId, {
+    file: 'contentScript.css'
+  }, () => {
+  	chrome.tabs.executeScript(tabId, {
+	    file: 'contentScript.js'
+	  })
+  })
+})
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 	if (request.action === 'url-get') {
 		chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {

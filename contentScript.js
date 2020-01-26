@@ -1,8 +1,3 @@
-const greenHex = '#007F29'
-const greenBoxShadowRgb = 'rgb(0, 127, 41, 0.6)'
-const redHex = '#B60A10'
-const redBoxShadowRgb = 'rgb(182 ,10, 16, 0.6)'
-
 chrome.runtime.sendMessage({ action: 'url-get' }, (response) => {
 	niftyBadge(response)
 })
@@ -21,6 +16,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 })
 
 function niftyBadge(object) {
+	const greenHex = '#007F29'
+	const greenBoxShadowRgb = 'rgb(0, 127, 41, 0.6)'
+	const redHex = '#B60A10'
+	const redBoxShadowRgb = 'rgb(182 ,10, 16, 0.6)'
+	
 	if (object && Object.keys(object).length > 0) {
 		const url = Object.keys(object)[0]
 		const backgroundColor = object[url] === 'yes' ? greenHex : redHex
