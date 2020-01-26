@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jose Antonio  Gonzalez Rodriguez" />
+    <meta name="description" content="Nifty URL" />
+    <meta name="theme-color" content="#2e27f8" />
+    <meta name="keywords" content="Nifty URL" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Nifty URL</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <div class="nifty-container" role="main">
+      <section class="nifty-section">
+        <h1 class="nifty-title">
+          <svg
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 -4 32 32"
+            aria-hidden="true"
+            style="will-change:transform;display: inline-block;margin: auto;"
+          >
+            <path d="M29.25,6.76a6,6,0,0,0-8.5,0l1.42,1.42a4,4,0,1,1,5.67,5.67l-8,8a4,4,0,1,1-5.67-5.66l1.41-1.42-1.41-1.42-1.42,1.42a6,6,0,0,0,0,8.5A6,6,0,0,0,17,25a6,6,0,0,0,4.27-1.76l8-8A6,6,0,0,0,29.25,6.76Z"></path>
+            <path d="M4.19,24.82a4,4,0,0,1,0-5.67l8-8a4,4,0,0,1,5.67,0A3.94,3.94,0,0,1,19,14a4,4,0,0,1-1.17,2.85L15.71,19l1.42,1.42,2.12-2.12a6,6,0,0,0-8.51-8.51l-8,8a6,6,0,0,0,0,8.51A6,6,0,0,0,7,28a6.07,6.07,0,0,0,4.28-1.76L9.86,24.82A4,4,0,0,1,4.19,24.82Z"></path>
+            <title>Link</title>
+          </svg>
+          Nifty URL
+        </h1>
+      </section>
+      <section class="nifty-section">
+        <p class="nifty-question">Is this URL nifty? <span id="nifty-url-result"></span></p>
+      </section>
+      <section class="nifty-section nifty-buttons">
+        <div class="nifty-buttons-left">
+          <button class="nifty-btn nifty-btn-green" id="nifty-yes">
+            <svg
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              style="will-change:transform;fill:white;display: inline-block;margin: auto;"
+            >
+              <path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"></path>
+              <path d="M14 21.5L9 16.54 10.59 14.97 14 18.35 21.41 11 23 12.58 14 21.5z"></path>
+              <title>Checkmark outline</title>
+            </svg>
+            <span style="margin-left: 4px;">Yes</span>
+          </button>
+          <button class="nifty-btn nifty-btn-red" id="nifty-no">
+            <svg
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              style="will-change:transform;fill:white;display: block;margin: auto;"
+            >
+              <path d="M16,2C8.2,2,2,8.2,2,16s6.2,14,14,14s14-6.2,14-14S23.8,2,16,2z M16,28C9.4,28,4,22.6,4,16S9.4,4,16,4s12,5.4,12,12  S22.6,28,16,28z"></path>
+              <path d="M21.4 23L16 17.6 10.6 23 9 21.4 14.4 16 9 10.6 10.6 9 16 14.4 21.4 9 23 10.6 17.6 16 23 21.4z"></path>
+              <title>Close outline</title>
+            </svg>
+            <span style="margin-left: 4px;">No</span>
+          </button>
+        </div>
+        <div class="nifty-buttons-right">
+          <button class="nifty-btn nifty-btn-gray" id="nifty-clear">
+            <svg
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+              style="will-change:transform;fill:black;display: block;margin: auto;"
+            >
+              <path d="M7 27H30V29H7zM27.38 10.51L19.45 2.59a2 2 0 0 0-2.83 0l-14 14a2 2 0 0 0 0 2.83L7.13 24h9.59L27.38 13.34A2 2 0 0 0 27.38 10.51zM15.89 22H8L4 18l6.31-6.31 7.93 7.92zm3.76-3.76l-7.92-7.93L18 4 26 11.93z"></path>
+              <title>Erase</title>
+          </svg>
+            <span style="margin-left: 4px;">Clear</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

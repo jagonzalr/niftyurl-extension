@@ -1,0 +1,9 @@
+.nifty-top-right {
+	border-radius:50%;
+  cursor: pointer;
+  padding: 8px;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  z-index: 9999999;
+}
